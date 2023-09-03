@@ -16,7 +16,7 @@ The basic rule of xor is:
 
 So our idea is to find such a pair of number `(a, b)` between the range `l <= a <= b <= r` where the XOR 
 operation is maximised!   
-Time Complexity: `O(l * r)`  
+Time Complexity: `O((r-l)^2)`  
 Space Complexity: `O(1)`  
 `Step 0`: Take user input for `l` [lower bound] and `r` [upper bound]  
 `Step 1`: Assign Lowest Integer value to `ans`  
