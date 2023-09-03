@@ -1,5 +1,5 @@
 # Question Link:
-[maximizing-xor](https://www.hackerrank.com/contests/gdsc-coding-round-2023-set-1/challenges/maximizing-xor) (Difficulty-Easy,30 points)  
+[Maximizing XOR](https://www.hackerrank.com/contests/gdsc-coding-round-2023-set-1/challenges/maximizing-xor) (Difficulty-Easy,30 points)  
 
 In the Coding Solution focus only on the maximizingXor() method
 
@@ -42,10 +42,10 @@ well here is a table to have a better understanding:
 Now all we need to do is get the number of bits in l ^ r, say `n`. And then set all the n bits to 1 and output that. There are many ways to do it. `<<` Left shift operator is helpful here.  
 we'll count the number of bits by removing 1 bit each time until the number becomes 0, and at the same time in another variable we'll add a bit and in the end display it.  
 If we follow the below logic we can easily find that maximum number.   
-Time Complexity: O(log (l ^ r))  
-Space Complexity: O(1)  
-`Step 0`: Take user input for `l` [lower bound] and `r` [upper bound]
-`Step 1`: a = `l ^ r`  
+Time Complexity: `O(log (l ^ r))`  
+Space Complexity: `O(1)`  
+`Step 0`: Take user input for `l` [lower bound] and `r` [upper bound]  
+`Step 1`: a = `l ^ r`   
 `Step 2`: b = 1  
 `Step 3`: Repeat `Step 3` until `a > 0`  
 &nbsp;&nbsp;&nbsp;&nbsp;`Step 3.1`: a = a >> 1, here we are deleting a bit  
